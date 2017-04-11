@@ -1,0 +1,36 @@
+def sentences():
+    noun1 = str(input("To start off, why don't you pick a noun, preferably something alive (or maybe\
+previously alive)"))
+    adj1 = str(input("Great. Now please enter an adjective to describe your noun."))
+    verb1 = str(input("Oh, I like it! Now, why don't you pick a verb and end it with \'ing\'."))
+    place1 = str(input("Okay great. Let's pick a setting now. Give me a general place without including\
+the word \'the\'."))
+    obj1 = str(input("Mmhmm.. we're getting somewhere. Okay, now an object."))
+    num1 = int(input("And a number, if you would."))
+    noun2 = str(input("Aaand another noun..preferably something alive."))
+    print("\n\nmmhmm....\n")
+    print("\n...alright...\n")
+    print("\nYes! I think we've got it! Let me show it to you.\n\n")
+    print("\nYOUR STORY:\nOne day, there was a " + adj1 + " " + noun1 + " " + verb1 + " through the " + place1 + " when\
+ all of the sudden, the " + adj1 + " " + noun1 + " heard a sound. \nThough the sound was small, it worried the "\
++ adj1 + " " + noun1 + ". As he kept " + verb1 + " through the " + place1 + ", the sound grew louder and louder. \n\
+The poor " + adj1 + " " + noun1 + " was terrified! He hid behind a " + obj1 + " and peered out with caution. \
+The sound grew from a low rumble to a the \nsound of a stampede, when " + str(num1) + " " + noun2 + "s came \
+stampeding through the " + place1 + ".")
+
+
+def answer():
+    answer = input("Hello %s. I have a story, but it is missing a few key items. Will you help me finish it?\
+    (\'y/n\')" % NAME)
+    if answer == "y":
+        print("Great! Let's get started.")
+        sentences()
+    else:
+        print("Okay, see you next time.")
+
+
+"""START THE MAD LIBS HERE!"""
+
+NAME = input("What is your name?")
+
+answer()        #the game is run if the person wants to play.
